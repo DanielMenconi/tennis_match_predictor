@@ -104,7 +104,7 @@ for t in thresholds: # iterate over thresholds
     f1 = f1_score(y_test, y_pred_t, average="macro") # compute F1 with y_pred_t
     f1_scores.append(f1) # store F1
 
-# 3. Migliore soglia
+
 best_t = thresholds[np.argmax(f1_scores)]
 best_f1 = max(f1_scores) # best F1
 
